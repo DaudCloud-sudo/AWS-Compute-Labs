@@ -88,7 +88,7 @@ This project demonstrates how to deploy a simple Employee Directory application 
 
 20. Wait for the **Instance state** to change to **Running** and the **Status check** to change to **2/2 checks passed**.
 
-    ![Instance Running](path/to/your/image7.png)
+    ![image](https://github.com/user-attachments/assets/0c72dd06-6a6d-4b06-bf19-e0938d4bcf9a)
 
 ## Viewing the Application
 
