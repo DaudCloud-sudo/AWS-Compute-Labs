@@ -1,4 +1,4 @@
-# AWS LABS
+# AWS Compute LABS
 
 # Deploying Employee Directory Application to EC2
 
