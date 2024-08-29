@@ -111,9 +111,6 @@ To avoid incurring additional costs, it's best to stop the EC2 instance.
 1. Return to the **AWS Management Console**.
 2. Select the `employee-directory-app` instance.
 3. Choose **Instance state**, then **Stop instance**, and confirm by choosing **Stop**.
-
-   ![Stop Instance](https://github.com/user-attachments/assets/b1c6b6d6-d3d2-4f4c-b8a2-c9057ff1d003)
-
 4. Wait for the **Instance state** to change to **Stopped**.
 
 ---
