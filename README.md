@@ -13,6 +13,7 @@ This lab demonstrates how to deploy a simple Employee Directory application to a
 ## Table of Contents
 
 1. [Launching an EC2 Instance](#launching-an-ec2-instance)
+   - [Using a Custom VPC](#using-a-custom-vpc)
    - [Configuring Network Settings](#configuring-network-settings)
    - [Setting Up User Data](#setting-up-user-data)
 2. [Viewing the Application](#viewing-the-application)
@@ -23,32 +24,30 @@ This lab demonstrates how to deploy a simple Employee Directory application to a
 
 ## Launching an EC2 Instance
 
-### Step-by-Step Guide
+### Using a Custom VPC
+
+If you wish to use a custom VPC, follow the instructions in the [Custom VPC Setup Guide](https://github.com/DaudCloud-sudo/AWS-Networking-and-Content-Delivery-Labs/tree/main). Otherwise, you can use the default VPC provided by AWS for simplicity.
+
+### Configuring EC2 Settings
 
 1. **Log in** to the **AWS Management Console** as the IAM Admin user.
 2. In the **Services** search bar, type **EC2** and open the **Amazon EC2 console**.
-3. In the navigation pane, choose **Instances**, then select **Launch instances**.
-
+3. In the navigation pane, under **Instances**, choose **Instances**, then select **Launch instances**.
 4. For **Name**, enter `employee-directory-app`.
-
-   ![Launch Instances](https://github.com/user-attachments/assets/68b24572-73bd-4cd9-a5bb-34799955ee53)
-
 5. Under **Application and OS Images (Amazon Machine Image)**, select the default **Amazon Linux 2023**.
 6. For **Instance type**, choose `t2.micro`.
-7. Under **Key pair (login)**, choose the `app-key-pair` that was created in exercise-3.
-
-   ![Choose Key Pair](https://github.com/user-attachments/assets/809a2c03-e108-40df-9b1f-c3283bbebda7)
+7. Under **Key pair (login)**, choose the `app-key-pair`.
 
 ### Configuring Network Settings
 
 8. Under **Network settings**, choose **Edit** and configure the following settings:
 
-   - **VPC**: Select `app-vpc`.
+   - **VPC**: Select `app-vpc` if using a custom VPC, or the default VPC if not.
    - **Subnet**: Choose **Public Subnet 1**.
    - **Auto-assign Public IP**: Select **Enable**.
 
-   ![Network Settings](https://github.com/user-attachments/assets/4af63a48-4094-41b9-8db1-0fdfa0312edf)
-
+   ![image](https://github.com/user-attachments/assets/796f6751-91ed-4165-adb8-e387a078c3f5)
+   
 9. Under **Firewall (security groups)**, choose **Create security group**. Use `web-security-group` as the **Security group name** and update **Description** to "Enable HTTP access".
 
 10. Under **Inbound security groups rules**, choose **Remove** above the **SSH** rule.
@@ -92,7 +91,7 @@ This lab demonstrates how to deploy a simple Employee Directory application to a
 
 18. Wait for the **Instance state** to change to **Running** and the **Status check** to update to **2/2 checks passed**.
 
-   ![Instance Running](https://github.com/user-attachments/assets/0c72dd06-6a6d-4b06-bf19-e0938d4bcf9a)
+   ![image](https://github.com/user-attachments/assets/2ee63031-b938-4ce5-b407-9f4ecb477b6a)
 
 ## Viewing the Application
 
@@ -126,6 +125,7 @@ To avoid incurring additional costs, it's best to stop the EC2 instance.
 - [AWS SAA Prep Course Exercise](https://aws.amazon.com/training/)
 - [AWS Free Tier](https://aws.amazon.com/free/)
 - [Amazon EC2 Pricing](https://aws.amazon.com/ec2/pricing/)
+- [Custom VPC Setup Guide](https://github.com/DaudCloud-sudo/AWS-Networking-and-Content-Delivery-Labs/tree/main)
 
 ---
 
