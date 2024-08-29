@@ -97,9 +97,6 @@ If you wish to use a custom VPC, follow the instructions in the [Custom VPC Setu
 
 1. Select the running `employee-directory-app` instance by checking its box.
 2. On the **Details** tab, copy the **Public IPv4 address**.
-
-   ![Public IP](https://github.com/user-attachments/assets/8a67e45a-e85e-4b42-b378-622c963aa8d6)
-
 3. Open a new browser window and paste the copied IP address. Ensure you are using **HTTP** (not HTTPS).
 
 4. You should see an **Employee Directory** placeholder page. The application is not yet connected to a database, so no interactions are available.
