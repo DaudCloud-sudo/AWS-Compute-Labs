@@ -101,7 +101,8 @@ If you wish to use a custom VPC, follow the instructions in the [Custom VPC Setu
 
 4. You should see an **Employee Directory** placeholder page. The application is not yet connected to a database, so no interactions are available.
 
-   ![Employee Directory Placeholder](https://github.com/user-attachments/assets/abb683af-d53d-4669-9aca-4b24650fdd81)
+![image](https://github.com/user-attachments/assets/c538aa61-7645-4340-94bd-d866f162cb7c)
+![image](https://github.com/user-attachments/assets/70a9f8b4-877b-40e6-b48d-58e0ddd9eed3)
 
 ## Stopping the Instance
 
