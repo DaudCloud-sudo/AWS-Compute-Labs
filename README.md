@@ -196,9 +196,14 @@ This second lab demonstrates how to set up a load-balanced, scalable environment
    
    ![image](https://github.com/user-attachments/assets/02e245b9-8e08-41bd-bbbf-4d262a3ff3cc)
 
-4. **Finalize Load Balancer**: Click **Create load balancer** and wait for it to become **Active**. Copy the DNS name to a text editor and prepend `http://`.
+4. **Finalize Load Balancer**: Click **Create load balancer** and wait for it to become **Active**. 
 
 ![image](https://github.com/user-attachments/assets/69a1b403-c202-41a1-a1ce-37d23c729f82)
+
+5. Copy the DNS name to a text editor and prepend `http://`.
+
+![image](https://github.com/user-attachments/assets/b7fd3ed6-5002-496a-b202-6d6ebe655999)
+![image](https://github.com/user-attachments/assets/869494a0-1523-47ab-8c1e-adccc07d6347)
 
 ## Task 3: Creating the Launch Template
 
@@ -236,7 +241,7 @@ This second lab demonstrates how to set up a load-balanced, scalable environment
    - **Auto Scaling group name**: `app-asg`
    - **Launch template**: `app-launch-template`
    - **VPC**: `app-vpc`
-   - **Availability Zones and subnets**: Select the appropriate subnets.
+   - **Availability Zones and subnets**: Select the appropriate Public subnets.
 3. **Configure Scaling Policies**:
    - **Desired capacity**: 2
    - **Minimum capacity**: 2
@@ -245,6 +250,8 @@ This second lab demonstrates how to set up a load-balanced, scalable environment
 4. **Add Notifications**:
    - Create an SNS topic `app-sns-topic` and subscribe with your email.
 5. **Finalize**: Click **Create Auto Scaling group**.
+
+![image](https://github.com/user-attachments/assets/0e1ad51e-a690-403d-93a1-799d40c03ab7)
 
 ## Task 5: Testing the Application
 
@@ -255,6 +262,8 @@ This second lab demonstrates how to set up a load-balanced, scalable environment
    - Append `/info` to see which instance is handling the request.
 4. **Stress Test**:
    - Use a stress tool to simulate load for 10 minutes and observe scaling behavior.
+  
+![image](https://github.com/user-attachments/assets/cab733ec-4e6e-4783-9859-cc8201ebcee9)
 
 ## Task 6: Deleting the Resources
 
@@ -278,7 +287,5 @@ This second lab demonstrates how to set up a load-balanced, scalable environment
    - Navigate to IAM, select `S3DynamoDBFullAccessRole`, and delete.
 10. **Delete SNS Topic**:
     - Navigate to SNS, select the topic `app-sns-topic`, and delete.
-
-## Conclusion
 
 By following this lab, you have successfully set up a scalable, load-balanced application environment on AWS. You learned how to create an EC2 instance, configure a load balancer, set up a launch template, create an Auto Scaling group, and delete resources after testing.
