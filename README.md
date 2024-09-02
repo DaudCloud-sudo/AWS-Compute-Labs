@@ -264,6 +264,14 @@ This second lab demonstrates how to set up a load-balanced, scalable environment
   
 ![image](https://github.com/user-attachments/assets/cab733ec-4e6e-4783-9859-cc8201ebcee9)
 
+5. **Automate Instances Lauched** when applying stress to some instances.
+
+![image](https://github.com/user-attachments/assets/a55421d7-0b89-406b-8d06-1146beb7ca14)
+
+6. This means Auto scaling group is working as expected as it launches new instances when CPU utilization is above 60.
+
+![image](https://github.com/user-attachments/assets/dc940a57-ee56-445c-9084-5cd37406306b)
+
 ## Deleting the Resources
 
 1. **Delete Auto Scaling Group**:
