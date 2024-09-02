@@ -17,6 +17,7 @@ This lab guides you through deploying a basic Employee Directory application to 
 
 2. [Lab 2: Load Balancing and Auto Scaling on AWS to EC2](#lab-1-load-balancing-and-auto-scaling-on-aws-to-ec2)
    - [Introduction](#introduction)
+   - [Architecture Diagram](#architecture-diagram)
    - [Prerequisites](#prerequisites)
    - [Again Launching an EC2 Instance](#again-launching-an-ec2-instance)
    - [Creating the Application Load Balancer](#creating-the-application-load-balancer)
@@ -145,7 +146,11 @@ To avoid incurring additional costs, it's best to stop the EC2 instance.
 
 ## Introduction 
 
-This second lab demonstrates how to set up a load-balanced, scalable environment for an application on AWS. The steps involve launching a new EC2 instance, configuring an Application Load Balancer (ALB), creating a launch template, setting up an Auto Scaling group, and testing the scalability of the setup.
+This second lab demonstrates how to set up a load-balanced, scalable environment for an application on AWS. The steps involve launching a new EC2 instance, configuring an Application Load Balancer (ALB), creating a launch template, setting up an Auto Scaling group, and testing the scalability of the setup. 
+
+## Architecture Diagram
+
+![image](https://github.com/user-attachments/assets/9596eaf6-02b6-4d22-bd3e-4451398e6ba2)
 
 ## Prerequisites
 
