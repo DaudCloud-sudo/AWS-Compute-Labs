@@ -198,7 +198,7 @@ This second lab demonstrates how to set up a load-balanced, scalable environment
        - Interval: 40
    - Register the `employee-directory-app-elb` instance.
    
-   ![image](https://github.com/user-attachments/assets/02e245b9-8e08-41bd-bbbf-4d262a3ff3cc)
+![image](https://github.com/user-attachments/assets/c06e899f-7d14-4cb3-a062-ae5c231abaae)
 
 4. **Finalize Load Balancer**: Click **Create load balancer** and wait for it to become **Active**. 
 
