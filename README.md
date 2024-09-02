@@ -1,8 +1,6 @@
 # AWS Compute LABS
 
-## LAB 1: Deploying Employee Directory Application to EC2
-
-This lab demonstrates how to deploy a simple Employee Directory application to an Amazon EC2 instance using a user data script. The steps are part of an AWS SAA preparation course lab.
+This lab guides you through deploying a basic Employee Directory application to an Amazon EC2 instance using a user data script. It also covers how to utilize an Elastic Load Balancer (ELB) and Auto Scaling Group to distribute HTTP traffic and automatically scale the application as demand increases. These steps are part of a lab in an AWS Solutions Architect Associate preparation course.
 
 ## Table of Contents
 
@@ -29,6 +27,7 @@ This lab demonstrates how to deploy a simple Employee Directory application to a
    - [Conclusion](#conclusion)
    
 ---
+## LAB 1: Deploying Employee Directory Application to EC2
 
 ## Prerequisites
 
@@ -154,7 +153,7 @@ This second lab demonstrates how to set up a load-balanced, scalable environment
 - An existing VPC (`app-vpc`) with at least two public subnets. Otherwise, Follow the instructions in the [Custom VPC Setup Guide](https://github.com/DaudCloud-sudo/AWS-Networking-and-Content-Delivery-Labs/tree/main).
 - Basic understanding of AWS EC2, ALB, and Auto Scaling concepts.
 
-## Task 1: Again Launching an EC2 Instance
+## Again Launching an EC2 Instance
 
 1. **Log in to the AWS Management Console** as your Admin user.
 2. **Navigate to EC2 Dashboard**: Search for and open EC2 in the AWS Management Console.
@@ -171,7 +170,7 @@ This second lab demonstrates how to set up a load-balanced, scalable environment
   
    ![image](https://github.com/user-attachments/assets/e32c7033-e929-4c81-92fb-59513b0e891b)
 
-## Task 2: Creating the Application Load Balancer
+## Creating the Application Load Balancer
 
 1. **Navigate to Load Balancers**: In the EC2 console navigation pane, under **Load Balancing**, choose **Load Balancers**.
 2. **Create Load Balancer**:
@@ -205,7 +204,7 @@ This second lab demonstrates how to set up a load-balanced, scalable environment
 ![image](https://github.com/user-attachments/assets/b7fd3ed6-5002-496a-b202-6d6ebe655999)
 ![image](https://github.com/user-attachments/assets/869494a0-1523-47ab-8c1e-adccc07d6347)
 
-## Task 3: Creating the Launch Template
+## Creating the Launch Template
 
 1. **Navigate to Launch Templates**: In the EC2 console, choose **Launch Templates**.
 2. **Create a New Launch Template**:
@@ -234,7 +233,7 @@ This second lab demonstrates how to set up a load-balanced, scalable environment
 
 ![image](https://github.com/user-attachments/assets/0399391e-df2d-4903-a57c-7c86aef0e817)
 
-## Task 4: Creating the Auto Scaling Group
+## Creating the Auto Scaling Group
 
 1. **Navigate to Auto Scaling Groups**: In the EC2 console, choose **Auto Scaling Groups**.
 2. **Create Auto Scaling Group**:
@@ -253,7 +252,7 @@ This second lab demonstrates how to set up a load-balanced, scalable environment
 
 ![image](https://github.com/user-attachments/assets/0e1ad51e-a690-403d-93a1-799d40c03ab7)
 
-## Task 5: Testing the Application
+## Testing the Application
 
 1. **Navigate to Target Groups**: In the EC2 console, choose **Target Groups** and select `app-target-group`.
 2. **Verify Instance Health**: Ensure all instances are **Healthy**.
@@ -265,7 +264,7 @@ This second lab demonstrates how to set up a load-balanced, scalable environment
   
 ![image](https://github.com/user-attachments/assets/cab733ec-4e6e-4783-9859-cc8201ebcee9)
 
-## Task 6: Deleting the Resources
+## Deleting the Resources
 
 1. **Delete Auto Scaling Group**:
    - Navigate to **Auto Scaling Groups**, select `app-asg`, and delete.
